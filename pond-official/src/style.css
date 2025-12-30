@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+@import 'primeicons/primeicons.css';
+
+@layer base {
+  body {
+    @apply bg-zinc-800 relative;
+    background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+                      linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+    background-size: 14px 24px;
+  }
+
+  a {
+    @apply no-underline font-medium text-white;
+  }
+
+  a:hover,
+  .active {
+    @apply text-orange-200;
+  }
+}
+
+@layer components {
+  .emphasis-link {
+    @apply no-underline font-bold text-orange-100;
+  }
+
+  .emphasis-link:hover {
+    @apply text-orange-200;
+  }
+}
+

@@ -1,27 +1,16 @@
-<template>
-  <div class="card">
-    <Timeline :value="events">
-      <template #content="slotProps">
-        <div :class="{ 'opacity-50': !slotProps.item.active }">
-          <div class="flex flex-col text-white">
-            <h3 class="text-md text-orange-100" style="font-weight: 500">
-              {{ slotProps.item.company }}
-            </h3>
-            <h2 class="text-lg font-bold">{{ slotProps.item.position }}</h2>
-            <p class="text-xs italic">{{ slotProps.item.date }}</p>
-            <p>{{ slotProps.item.description }}</p>
-          </div>
-        </div>
-      </template>
-    </Timeline>
-  </div>
-</template>
-
-<script setup>
+<script setup lang="ts">
 import Timeline from 'primevue/timeline'
 import { ref } from 'vue'
 
-const events = ref([
+interface Company {
+  position: string
+  company: string
+  date: string
+  description: string
+  active: boolean
+}
+
+const companies = ref<Company[]>([
   {
     position: 'Software Engineer Intern',
     company: 'RunSignup',
@@ -49,6 +38,23 @@ const events = ref([
 ])
 </script>
 
+<template>
+  <Timeline :value="companies">
+    <template #content="slotProps">
+      <div :class="{ 'opacity-50': !slotProps.item.active }">
+        <div class="flex flex-col text-white">
+          <h3 class="text-md text-orange-100" style="font-weight: 500">
+            {{ slotProps.item.company }}
+          </h3>
+          <h2 class="text-lg font-bold">{{ slotProps.item.position }}</h2>
+          <p class="text-xs italic">{{ slotProps.item.date }}</p>
+          <p>{{ slotProps.item.description }}</p>
+        </div>
+      </div>
+    </template>
+  </Timeline>
+</template>
+
 <style scoped>
 :deep(.p-timeline-event-opposite) {
   display: none;
@@ -56,6 +62,12 @@ const events = ref([
 
 :deep(.p-timeline-event) {
   min-height: 14rem;
+}
+
+@media (max-width: 640px) {
+  :deep(.p-timeline-event) {
+    min-height: 20rem;
+  }
 }
 
 :deep(.p-timeline-event-connector) {

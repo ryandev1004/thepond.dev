@@ -1,7 +1,16 @@
 <script setup lang="ts">
 import ProjectCard from '@/components/common/ProjectCard.vue';
+import { ref } from 'vue';
 
-const projects = [
+interface Project {
+  title: string;
+  stack: string;
+  description: string;
+  img: string;
+  link: string;
+}
+
+const projects = ref<Project[]>([
   {
     title: 'DocU',
     stack: 'React | Spring Boot | PostgreSQL',
@@ -16,7 +25,7 @@ const projects = [
     img: '/src/assets/projects/centralsale.png',
     link: 'https://github.com/ryandev1004/CentralSale',
   }
-];
+]);
 
 </script>
 

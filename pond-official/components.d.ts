@@ -11,6 +11,8 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Accordion: typeof import('primevue/accordion')['default']
+    AccordionTab: typeof import('primevue/accordiontab')['default']
     Button: typeof import('primevue/button')['default']
     Card: typeof import('primevue/card')['default']
     Experience: typeof import('./src/components/Experience.vue')['default']
@@ -26,6 +28,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     SkillCard: typeof import('./src/components/common/SkillCard.vue')['default']
     SkillCardDisplay: typeof import('./src/components/common/SkillCardDisplay.vue')['default']
+    TechCard: typeof import('./src/components/common/TechCard.vue')['default']
     TechStack: typeof import('./src/components/TechStack.vue')['default']
     Timeline: typeof import('primevue/timeline')['default']
   }

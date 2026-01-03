@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import Overview from '../views/main/Overview.vue'
-import Projects from '../components/Projects.vue'
-import Contact from '../views/main/Contact.vue'
+import About from '../views/main/About.vue'
+import PageNotFound from '../views/auth/PageNotFound.vue'
+
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -9,6 +10,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'overview',
     component: Overview,
   },
+  {
+    path: '/about',
+    name: 'about',
+    component: About,
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'PageNotFound',
+    component: PageNotFound,
+  }
 ]
 
 const router = createRouter({

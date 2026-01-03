@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import ProjectCard from '@/components/common/ProjectCard.vue';
-import { ref } from 'vue';
+import ProjectCard from '@/components/common/ProjectCard.vue'
+import { ref } from 'vue'
+import docuImg from '@/assets/projects/docu.png'
+import centralsaleImg from '@/assets/projects/centralsale.png'
 
 interface Project {
-  title: string;
-  stack: string;
-  description: string;
-  img: string;
-  link: string;
+  title: string
+  stack: string
+  description: string
+  img: string
+  link: string
 }
 
 const projects = ref<Project[]>([
@@ -15,18 +17,17 @@ const projects = ref<Project[]>([
     title: 'DocU',
     stack: 'React | Spring Boot | PostgreSQL',
     description: 'A college/highschool document formatter and generator.',
-    img: '/src/assets/projects/docu.png',
+    img: docuImg,
     link: 'https://github.com/ryandev1004/DocU',
   },
   {
     title: 'CentralSale',
     stack: 'React | Spring Boot | PostgreSQL | Rainforest API',
     description: 'A central hub for tracking sales and inventory on Amazon',
-    img: '/src/assets/projects/centralsale.png',
+    img: centralsaleImg,
     link: 'https://github.com/ryandev1004/CentralSale',
-  }
-]);
-
+  },
+])
 </script>
 
 <template>
@@ -41,18 +42,20 @@ const projects = ref<Project[]>([
           <i class="pi pi-star text-3xl text-white"></i>
           <span class="text-3xl font-bold text-white">Featured Projects</span>
         </div>
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+        <div
+          class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3"
+        >
           <ProjectCard
-          v-for="(project, index) in projects"
-          :key="index"
-          :title="project.title"
-          :stack="project.stack"
-          :description="project.description"
-          :img="project.img"
-          :link="project.link"
+            v-for="(project, index) in projects"
+            :key="index"
+            :title="project.title"
+            :stack="project.stack"
+            :description="project.description"
+            :img="project.img"
+            :link="project.link"
           />
+        </div>
       </div>
-    </div>
     </div>
   </section>
 </template>

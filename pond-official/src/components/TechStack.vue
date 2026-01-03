@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import TechCard from '@/components/common/TechCard.vue'
+import springbootIcon from '@/assets/icons/springbooticon.svg'
+import vueIcon from '@/assets/icons/vue.svg'
+import postgresqlIcon from '@/assets/icons/postgresql.svg'
+import phpIcon from '@/assets/icons/php.svg'
+import reactIcon from '@/assets/icons/react.svg'
+import mysqlIcon from '@/assets/icons/mysql.svg'
 
 interface Tech {
   icon: string
@@ -10,32 +16,32 @@ interface Tech {
 
 const techs = ref<Tech[]>([
   {
-    icon: 'src/assets/icons/springbooticon.svg',
+    icon: springbootIcon,
     title: 'SpringBoot',
     description: 'Backend framework based in Java',
   },
   {
-    icon: 'src/assets/icons/vue.svg',
+    icon: vueIcon,
     title: 'Vue',
     description: 'Frontend framework based in JS/TS',
   },
   {
-    icon: 'src/assets/icons/postgresql.svg',
+    icon: postgresqlIcon,
     title: 'PostgreSQL',
     description: 'Relational Database',
   },
   {
-    icon: 'src/assets/icons/php.svg',
+    icon: phpIcon,
     title: 'PHP',
     description: 'Server side scripting language',
   },
   {
-    icon: 'src/assets/icons/react.svg',
+    icon: reactIcon,
     title: 'React',
     description: 'JavaScript Library',
   },
   {
-    icon: 'src/assets/icons/mysql.svg',
+    icon: mysqlIcon,
     title: 'MySQL DB',
     description: 'Relational Database',
   },

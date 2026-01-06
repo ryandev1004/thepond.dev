@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import TechCard from '@/components/common/TechCard.vue'
+import mysqlIcon from '@/assets/icons/mysql.svg'
+import phpIcon from '@/assets/icons/php.svg'
+import postgresqlIcon from '@/assets/icons/postgresql.svg'
+import reactIcon from '@/assets/icons/react.svg'
 import springbootIcon from '@/assets/icons/springbooticon.svg'
 import vueIcon from '@/assets/icons/vue.svg'
-import postgresqlIcon from '@/assets/icons/postgresql.svg'
-import phpIcon from '@/assets/icons/php.svg'
-import reactIcon from '@/assets/icons/react.svg'
-import mysqlIcon from '@/assets/icons/mysql.svg'
+import TechCard from '@/components/common/TechCard.vue'
+import { ref } from 'vue'
 
 interface Tech {
   icon: string
@@ -18,32 +18,32 @@ const techs = ref<Tech[]>([
   {
     icon: springbootIcon,
     title: 'SpringBoot',
-    description: 'Backend framework based in Java',
+    description: 'Java framework for backend development.',
   },
   {
     icon: vueIcon,
     title: 'Vue',
-    description: 'Frontend framework based in JS/TS',
+    description: 'JavaScript framework for frontend development.',
   },
   {
     icon: postgresqlIcon,
     title: 'PostgreSQL',
-    description: 'Relational Database',
+    description: 'Object-Relational Database.',
   },
   {
     icon: phpIcon,
     title: 'PHP',
-    description: 'Server side scripting language',
+    description: 'Server side scripting language used for web development.',
   },
   {
     icon: reactIcon,
     title: 'React',
-    description: 'JavaScript Library',
+    description: 'JavaScript Library for frontend development.',
   },
   {
     icon: mysqlIcon,
     title: 'MySQL DB',
-    description: 'Relational Database',
+    description: 'Relational Database.',
   },
 ])
 </script>

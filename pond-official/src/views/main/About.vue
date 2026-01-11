@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import Accordion from 'primevue/accordion'
-import AccordionPanel from 'primevue/accordionpanel'
-import AccordionHeader from 'primevue/accordionheader'
 import AccordionContent from 'primevue/accordioncontent'
+import AccordionHeader from 'primevue/accordionheader'
+import AccordionPanel from 'primevue/accordionpanel'
 </script>
 
 <template>
@@ -13,35 +13,32 @@ import AccordionContent from 'primevue/accordioncontent'
       :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }"
     >
       <div class="flex flex-col gap-8">
-        <span class="py-8 text-center text-6xl font-bold text-white"
+        <span class="py-6 text-center text-6xl font-bold text-white"
           >About</span
         >
         <span class="text-lg leading-relaxed text-white">
-          Hello! I'm Ryan Sullivan. This is my personal website which currently
-          only serves as my portfolio and will remain that way for the
-          foreseeable future. A little bit about me, is that I'm a full-stack
-          software engineer based in New Jersey, studying Computer Science at
-          Rowan University. I'm 21 years old and in my free time I enjoy
-          programming, watching/playing sports (especially basketball and
-          football) and playing a plethora of video games (when I have the
-          time). Below is some additional information about me and the website.
+          This is my portfolio website where you can keep up to date with my
+          latest work, acomplishments, and more! I wanted to make this to have
+          an easier way to showcase everything I've worked on, as well as give
+          myself something to tinker with to improve my overall design and web
+          development skills. Below are some potential questions you may have
+          when loading this website, but if you have others feel free to reach
+          out to me!
         </span>
         <div
-          class="w-full rounded-2xl bg-red-100 pt-2 p-6 px-6"
+          class="w-full rounded-2xl bg-red-100 p-6 px-6 pt-2"
           style="background-color: var(--p-neutral-700)"
         >
           <Accordion>
             <AccordionPanel value="0">
-              <AccordionHeader>Why thepond.dev?</AccordionHeader>
+              <AccordionHeader> Why thepond.dev? </AccordionHeader>
               <AccordionContent>
                 <p class="m-0">
-                  'The Pond' started off as a nickname for an online groupchat I
-                  created back in 2020. To this day, it's one of the longest
-                  lasting groupchats I've been apart of and has somewhat become
-                  a staple in my life along with the people that are in it. Long
-                  story short, I like the name a lot, so much so I decided to
-                  buy a whole domain for it and make it apart of my own personal
-                  portfolio!
+                  Truthfully, I wanted to add a little flare to my domain name
+                  rather than just using my name. "The Pond" is reference to an
+                  discord server I made for my friends and I back during COVID.
+                  It was during that time was when I began my developer journey,
+                  so I figured I'd pay homage to that period of time in my life.
                 </p>
               </AccordionContent>
             </AccordionPanel>
@@ -51,8 +48,7 @@ import AccordionContent from 'primevue/accordioncontent'
                 <p class="m-0">
                   Vue 3, TypeScript, PrimeVue, Tailwind CSS, and a few other
                   libraries. The repository for this website should be public on
-                  my GitHub. If it's not-- well, reach out to me and maybe I'll
-                  share it with you!
+                  my GitHub.
                 </p>
               </AccordionContent>
             </AccordionPanel>
@@ -60,22 +56,17 @@ import AccordionContent from 'primevue/accordioncontent'
               <AccordionHeader>What are my goals?</AccordionHeader>
               <AccordionContent>
                 <p class="m-0">
-                  Well, just like everyone that is an aspiring software
-                  engineer, to get a job! Beyond that, I want to continue to
-                  grow my talents as a developer on all fronts and eventually be
-                  able to pass that knowledge onto others. My original
-                  aspirations fell in line with education, so ultimately it'd be
-                  nice to be able to make that a reality in some way
-                  (eventually).
+                  Outside of graduating with my degree and securing a job, I
+                  really want to improve myself as a developer. The idea of
+                  having the ability to create my own large-scale projects is
+                  something that interests me, and I'd like to be able to use my
+                  skills not just for work, but for my own enjoyment.
                 </p>
                 <br />
                 <p class="m-0">
-                  As far as 'getting a job' goes, I would prefer to remain in
-                  the web development space--but who knows. I've found interest
-                  in other spaces and plan on trying to explore as much as them
-                  as I can while I'm still in school. For the time being though,
-                  web development is where I want to be and plan on honing my
-                  talents there.
+                  In a way this website is a good way of tracking my progress,
+                  so I look forward to see how it evolves over time as I learn
+                  new things and work in new places!
                 </p>
               </AccordionContent>
             </AccordionPanel>

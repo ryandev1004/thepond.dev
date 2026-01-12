@@ -35,7 +35,7 @@ import AccordionPanel from 'primevue/accordionpanel'
               <AccordionContent>
                 <p class="m-0">
                   Truthfully, I wanted to add a little flare to my domain name
-                  rather than just using my name. "The Pond" is reference to an
+                  rather than just using my name. "The Pond" is reference to a
                   discord server I made for my friends and I back during COVID.
                   It was during that time was when I began my developer journey,
                   so I figured I'd pay homage to that period of time in my life.

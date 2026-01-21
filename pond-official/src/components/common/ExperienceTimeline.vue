@@ -12,9 +12,9 @@ interface Company {
 
 const companies = ref<Company[]>([
   {
-    position: 'Software Engineer Intern',
+    position: 'Software Engineer Co-Op/Intern',
     company: 'RunSignup',
-    date: 'Upcoming',
+    date: 'Current',
     description:
       'Completion of code assignments in PHP, MySQL, or JavaScript on an AWS cloud platform. Participation in team meetings and design sessions. Testing of developed software.',
     active: true,
@@ -25,14 +25,22 @@ const companies = ref<Company[]>([
     date: 'Apr 2025 - Current',
     description:
       'Developed and implemented a Budget Dashboard for tracking and managing department expenses using Google Sheets and Apps Script. Conducted comprehensive security audits and vulnerability assessments to identify potential risks and recommend mitigation strategies.',
-    active: false,
+    active: true,
+  },
+  {
+    position: 'Software Engineer (Part-Time)',
+    company: 'Oasis Network',
+    date: 'Dec 2025 - Current',
+    description:
+      'Took part in designing and building B2C SaaS startup utilizing Spring Boot and Vue. Developed full stack features used for website admin management, advanced searching and sorting, and displaying server wide metrics. Assisted in integrating professional work flows through Linear and GitHub, allowing faster and more organized code reviews and deployments.',
+    active: true,
   },
   {
     position: 'Software Engineer Intern',
     company: 'Oasis Network',
     date: 'May 2025 - Dec 2025',
     description:
-      'Assist in building a B2C SaaS startup utilizing Spring Boot, Python FastAPI and Vue. Helped Senior-Developers in architecting RESTful APIs, with domain driven design and efficient data handling.',
+      'Spearheaded architecture of a REST API utilizing Python FastAPI for live status/metric checks for in-game servers. Helped Senior-Developers in architecting RESTful APIs, with domain driven design and efficient data handling.',
     active: false,
   },
 ])

@@ -29,7 +29,7 @@ const companies = ref<Company[]>([
   },
   {
     position: 'Software Engineer (Part-Time)',
-    company: 'Oasis Network',
+    company: 'Conduit Gaming',
     date: 'Dec 2025 - Current',
     description:
       'Took part in designing and building B2C SaaS startup utilizing Spring Boot and Vue. Developed full stack features used for website admin management, advanced searching and sorting, and displaying server wide metrics. Assisted in integrating professional work flows through Linear and GitHub, allowing faster and more organized code reviews and deployments.',
